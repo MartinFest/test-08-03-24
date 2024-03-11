@@ -8,7 +8,32 @@
 </head>
 
 <body>
-    <h1>Mon premier site</h1>
+    <h1 class="title">Mon premier site</h1>
+    <script>
+        // function maSuperFonction(a, b) {
+        //     return a + b;
+        // }
+
+        // const maSuperFonction2 = (a, b) => { return a + b };
+
+        // const masuperFonction3 = (a, b) => a + b;
+
+        // // console.log(masuperFonction(2, 2)); 
+        // console.log(maSuperFonction(2, 4));
+        // console.log(maSuperFonction2(4, 4));
+        // console.log(masuperFonction3(6, 4));
+
+        const title = document.querySelector(".title");
+
+        title.addEventListener("click", function (event) {
+            console.log(event);
+            title.style.color = "red";
+        });
+
+        document.body.addEventListener("mousemove", function (event) {
+            console.log(event);
+        });
+    </script>
 </body>
 
 </html>
